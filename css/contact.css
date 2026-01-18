@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  padding-top: 90px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+.vb-hero-section {
+  position: relative;
+  height: 400px;
+}
+
+.vb-hero-image {
+  background-image: url("../images/vb.grad.jfif");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.vb-hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.vb-hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.vb-hero-content p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.navbar {
+  background-color: white;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-nav .nav-link {
+  color: black;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover,
+.dropdown-item:hover {
+  color: #8b0d23;
+}
+
+.navbar-title {
+  color: black;
+  margin-left: 10px;
+}
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  background: #8b0d2d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  transform: translateY(-5px);
+}
+.campus-card {
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+}
+
+.campus-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 20px;
+}
+.vb-footer {
+  background: #111;
+  color: #aaa;
+  padding-top: 80px;
+  font-family: inherit;
+}
+
+.vb-footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.vb-footer-brand img {
+  width: 50px;
+}
+
+.vb-footer-brand h5 {
+  color: #fff;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.vb-footer-brand h5 span {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.vb-footer-text {
+  max-width: 320px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.vb-footer-contact {
+  list-style: none;
+  padding: 0;
+}
+
+.vb-footer-contact li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.vb-footer-title {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.vb-footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.vb-footer-links li {
+  margin-bottom: 14px;
+}
+
+.vb-footer-links a {
+  color: #aaa;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.vb-footer-links a:hover {
+  color: #8b0d2d;
+}
+
+.vb-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 60px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.vb-footer-bottom span {
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  body {
+    padding-top: 80px;
+  }
+
+  .vb-hero-section {
+    height: 320px;
+  }
+
+  .vb-hero-content h1 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .vb-hero-content p {
+    text-align: center;
+  }
+
+  .campus-card {
+    height: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 70px;
+  }
+
+  .vb-hero-section {
+    height: 260px;
+  }
+
+  .vb-hero-content {
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .vb-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .vb-hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .campus-card {
+    height: 220px;
+  }
+
+  .campus-overlay {
+    padding: 15px;
+  }
+
+  .vb-footer {
+    text-align: center;
+  }
+
+  .vb-footer-brand {
+    justify-content: center;
+  }
+
+  .vb-footer-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .vb-hero-section {
+    height: 220px;
+  }
+
+  .vb-hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .vb-hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .campus-card {
+    height: 200px;
+  }
+
+  #scrollTopBtn {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .vb-footer-bottom {
+    font-size: 13px;
+    padding: 15px 10px;
+  }
+}
